@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 JSON : DESPACHAR | A Book</title>
+  <meta name="description" content="5 JSON : DESPACHAR | A Book" />
+  <meta name="generator" content="bookdown 0.30 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 JSON : DESPACHAR | A Book" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 JSON : DESPACHAR | A Book" />
+  
+  
+  
+
+<meta name="author" content="Frida Gomam" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="json-presupuestos.html"/>
+<link rel="next" href="atc-presupuestos.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Listados</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#listados-para-presupuestar"><i class="fa fa-check"></i><b>1.1</b> Listados Para Presupuestar</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#presupuestar---h1"><i class="fa fa-check"></i><b>1.1.1</b> Presupuestar - H1</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#presupuestar-h7---h1"><i class="fa fa-check"></i><b>1.1.2</b> Presupuestar H7 -&gt; H1</a></li>
+<li class="chapter" data-level="1.1.3" data-path="index.html"><a href="index.html#ventanilla"><i class="fa fa-check"></i><b>1.1.3</b> Ventanilla</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#exportar-resultados-y-cruzar-con-ioss"><i class="fa fa-check"></i><b>1.2</b> Exportar resultados y cruzar con IOSS</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#cruzar-con-ubicación"><i class="fa fa-check"></i><b>1.3</b> Cruzar con Ubicación</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#listado-errores-despacho"><i class="fa fa-check"></i><b>1.4</b> Listado errores despacho</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#listados-validación"><i class="fa fa-check"></i><b>1.5</b> Listados Validación</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="presupuestar.html"><a href="presupuestar.html"><i class="fa fa-check"></i><b>2</b> Presupuestar</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="presupuestar.html"><a href="presupuestar.html#puntualizar-dua"><i class="fa fa-check"></i><b>2.1</b> Puntualizar DUA</a></li>
+<li class="chapter" data-level="2.2" data-path="presupuestar.html"><a href="presupuestar.html#factura-compartida"><i class="fa fa-check"></i><b>2.2</b> Factura Compartida</a></li>
+<li class="chapter" data-level="2.3" data-path="presupuestar.html"><a href="presupuestar.html#tipo-de-cambio"><i class="fa fa-check"></i><b>2.3</b> Tipo de cambio</a></li>
+<li class="chapter" data-level="2.4" data-path="presupuestar.html"><a href="presupuestar.html#ioss-de-más-de-150-o-importador-empresa"><i class="fa fa-check"></i><b>2.4</b> IOSS de más de 150€ o importador empresa</a></li>
+<li class="chapter" data-level="2.5" data-path="presupuestar.html"><a href="presupuestar.html#devolución-empresa"><i class="fa fa-check"></i><b>2.5</b> DEVOLUCIÓN empresa</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="presupuestar.html"><a href="presupuestar.html#dua-francés"><i class="fa fa-check"></i><b>2.5.1</b> Dua Francés</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="presupuestar.html"><a href="presupuestar.html#rechazos-sif-animal-exceso-tabaco"><i class="fa fa-check"></i><b>2.6</b> RECHAZOS, SIF ANIMAL, EXCESO TABACO…</a></li>
+<li class="chapter" data-level="2.7" data-path="presupuestar.html"><a href="presupuestar.html#efectos-personales"><i class="fa fa-check"></i><b>2.7</b> EFECTOS PERSONALES</a></li>
+<li class="chapter" data-level="2.8" data-path="presupuestar.html"><a href="presupuestar.html#régimen-preferencial"><i class="fa fa-check"></i><b>2.8</b> RÉGIMEN PREFERENCIAL</a></li>
+<li class="chapter" data-level="2.9" data-path="presupuestar.html"><a href="presupuestar.html#recargo-equivalencia"><i class="fa fa-check"></i><b>2.9</b> RECARGO EQUIVALENCIA</a></li>
+<li class="chapter" data-level="2.10" data-path="presupuestar.html"><a href="presupuestar.html#origen-canarias-ceuta-o-melilla"><i class="fa fa-check"></i><b>2.10</b> ORIGEN CANARIAS, CEUTA O MELILLA</a></li>
+<li class="chapter" data-level="2.11" data-path="presupuestar.html"><a href="presupuestar.html#muestras"><i class="fa fa-check"></i><b>2.11</b> MUESTRAS</a></li>
+<li class="chapter" data-level="2.12" data-path="presupuestar.html"><a href="presupuestar.html#antidumping-china"><i class="fa fa-check"></i><b>2.12</b> ANTIDUMPING CHINA</a></li>
+<li class="chapter" data-level="2.13" data-path="presupuestar.html"><a href="presupuestar.html#vapeadores-y-liquido-de-vapeo"><i class="fa fa-check"></i><b>2.13</b> VAPEADORES Y LIQUIDO DE VAPEO</a></li>
+<li class="chapter" data-level="2.14" data-path="presupuestar.html"><a href="presupuestar.html#iiee-tabacos"><i class="fa fa-check"></i><b>2.14</b> IIEE TABACOS</a>
+<ul>
+<li class="chapter" data-level="2.14.1" data-path="presupuestar.html"><a href="presupuestar.html#cigarrillos"><i class="fa fa-check"></i><b>2.14.1</b> Cigarrillos</a></li>
+<li class="chapter" data-level="2.14.2" data-path="presupuestar.html"><a href="presupuestar.html#puros"><i class="fa fa-check"></i><b>2.14.2</b> PUROS</a></li>
+<li class="chapter" data-level="2.14.3" data-path="presupuestar.html"><a href="presupuestar.html#tabaco-de-pipa"><i class="fa fa-check"></i><b>2.14.3</b> TABACO DE PIPA</a></li>
+</ul></li>
+<li class="chapter" data-level="2.15" data-path="presupuestar.html"><a href="presupuestar.html#iiee-alcohol"><i class="fa fa-check"></i><b>2.15</b> IIEE ALCOHOL</a>
+<ul>
+<li class="chapter" data-level="2.15.1" data-path="presupuestar.html"><a href="presupuestar.html#licores-alta-gradación"><i class="fa fa-check"></i><b>2.15.1</b> Licores ALTA GRADACIÓN</a></li>
+<li class="chapter" data-level="2.15.2" data-path="presupuestar.html"><a href="presupuestar.html#vino"><i class="fa fa-check"></i><b>2.15.2</b> VINO</a></li>
+</ul></li>
+<li class="chapter" data-level="2.16" data-path="presupuestar.html"><a href="presupuestar.html#multibulto"><i class="fa fa-check"></i><b>2.16</b> Multibulto</a></li>
+<li class="chapter" data-level="2.17" data-path="presupuestar.html"><a href="presupuestar.html#ddp"><i class="fa fa-check"></i><b>2.17</b> DDP</a></li>
+<li class="chapter" data-level="2.18" data-path="presupuestar.html"><a href="presupuestar.html#pasaporte---puntualización-dua"><i class="fa fa-check"></i><b>2.18</b> Pasaporte - puntualización DUA</a></li>
+<li class="chapter" data-level="2.19" data-path="presupuestar.html"><a href="presupuestar.html#iva-diferido"><i class="fa fa-check"></i><b>2.19</b> IVA diferido</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="ventanilla-1.html"><a href="ventanilla-1.html"><i class="fa fa-check"></i><b>3</b> Ventanilla</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="ventanilla-1.html"><a href="ventanilla-1.html#ventanilla---hacer-presupuesto"><i class="fa fa-check"></i><b>3.1</b> VENTANILLA - Hacer presupuesto</a></li>
+<li class="chapter" data-level="3.2" data-path="ventanilla-1.html"><a href="ventanilla-1.html#ventanilla---presupuesto-pagado---despachar"><i class="fa fa-check"></i><b>3.2</b> VENTANILLA - Presupuesto pagado -&gt; DESPACHAR</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="json-presupuestos.html"><a href="json-presupuestos.html"><i class="fa fa-check"></i><b>4</b> JSON: PRESUPUESTOS</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="json-presupuestos.html"><a href="json-presupuestos.html#integrador"><i class="fa fa-check"></i><b>4.1</b> Integrador</a></li>
+<li class="chapter" data-level="4.2" data-path="json-presupuestos.html"><a href="json-presupuestos.html#s4"><i class="fa fa-check"></i><b>4.2</b> S4</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="json-despachar.html"><a href="json-despachar.html"><i class="fa fa-check"></i><b>5</b> JSON : DESPACHAR</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="json-despachar.html"><a href="json-despachar.html#exportar-json-desde-integrador"><i class="fa fa-check"></i><b>5.1</b> Exportar JSON desde INTEGRADOR</a></li>
+<li class="chapter" data-level="5.2" data-path="json-despachar.html"><a href="json-despachar.html#tdua_integrador-generación-de-dua-y-registro-ante-aeat"><i class="fa fa-check"></i><b>5.2</b> TDUA_INTEGRADOR: generación de DUA y registro ante AEAT</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="json-despachar.html"><a href="json-despachar.html#rechazo-parcial---procedimiento-para-acomodar-sumarias"><i class="fa fa-check"></i><b>5.2.1</b> Rechazo parcial - procedimiento para acomodar sumarias</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="json-despachar.html"><a href="json-despachar.html#volcar-respuesta-desde-tdua_integrador-a-integrador"><i class="fa fa-check"></i><b>5.3</b> Volcar respuesta desde Tdua_integrador  a INTEGRADOR</a></li>
+<li class="chapter" data-level="5.4" data-path="json-despachar.html"><a href="json-despachar.html#error-al-exportar-json-desde-integrador"><i class="fa fa-check"></i><b>5.4</b> Error al exportar JSON desde integrador</a></li>
+<li class="chapter" data-level="5.5" data-path="json-despachar.html"><a href="json-despachar.html#error-al-importar-txt-a-integrador"><i class="fa fa-check"></i><b>5.5</b> Error al importar txt a integrador</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="atc-presupuestos.html"><a href="atc-presupuestos.html"><i class="fa fa-check"></i><b>6</b> ATC Presupuestos</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="atc-presupuestos.html"><a href="atc-presupuestos.html#uar"><i class="fa fa-check"></i><b>6.1</b> UAR</a></li>
+<li class="chapter" data-level="6.2" data-path="atc-presupuestos.html"><a href="atc-presupuestos.html#modificar-presupuesto"><i class="fa fa-check"></i><b>6.2</b> Modificar Presupuesto</a></li>
+<li class="chapter" data-level="6.3" data-path="atc-presupuestos.html"><a href="atc-presupuestos.html#error-nuestro-se-le-cobró-demasiado"><i class="fa fa-check"></i><b>6.3</b> Error nuestro, se le cobró demasiado</a></li>
+<li class="chapter" data-level="6.4" data-path="atc-presupuestos.html"><a href="atc-presupuestos.html#levante-formulario-web---agente-externo"><i class="fa fa-check"></i><b>6.4</b> Levante Formulario Web - Agente Externo</a></li>
+<li class="chapter" data-level="6.5" data-path="atc-presupuestos.html"><a href="atc-presupuestos.html#ioss"><i class="fa fa-check"></i><b>6.5</b> IOSS</a></li>
+<li class="chapter" data-level="6.6" data-path="atc-presupuestos.html"><a href="atc-presupuestos.html#devolución-importes"><i class="fa fa-check"></i><b>6.6</b> Devolución importes</a></li>
+<li class="chapter" data-level="6.7" data-path="atc-presupuestos.html"><a href="atc-presupuestos.html#múltiples-envios---1-factura"><i class="fa fa-check"></i><b>6.7</b> Múltiples envios - 1 factura</a></li>
+<li class="chapter" data-level="6.8" data-path="atc-presupuestos.html"><a href="atc-presupuestos.html#lrd---situación-en-taric"><i class="fa fa-check"></i><b>6.8</b> LRD - situación en taric</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="errores-despacho.html"><a href="errores-despacho.html"><i class="fa fa-check"></i><b>7</b> ERRORES DESPACHO</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="errores-despacho.html"><a href="errores-despacho.html#listado-errores-despacho-1"><i class="fa fa-check"></i><b>7.1</b> Listado errores despacho</a></li>
+<li class="chapter" data-level="7.2" data-path="errores-despacho.html"><a href="errores-despacho.html#mensajes-de-error"><i class="fa fa-check"></i><b>7.2</b> Mensajes de error</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="errores-despacho.html"><a href="errores-despacho.html#c44.-error-en-el-certificado"><i class="fa fa-check"></i><b>7.2.1</b> <strong>C44. Error en el certificado</strong></a></li>
+<li class="chapter" data-level="7.2.2" data-path="errores-despacho.html"><a href="errores-despacho.html#c37.-código-ioss-no-valido-o-no-declarado"><i class="fa fa-check"></i><b>7.2.2</b> <strong>C37. Código IOSS no valido o no declarado</strong></a></li>
+<li class="chapter" data-level="7.2.3" data-path="errores-despacho.html"><a href="errores-despacho.html#c40.-error-bultos-datados-saldo-bultos"><i class="fa fa-check"></i><b>7.2.3</b> <strong>C40. Error bultos datados &gt; saldo bultos</strong></a></li>
+<li class="chapter" data-level="7.2.4" data-path="errores-despacho.html"><a href="errores-despacho.html#c44.-c07-con-importes-150"><i class="fa fa-check"></i><b>7.2.4</b> <strong>C44. C07 con importes &gt;150</strong></a></li>
+<li class="chapter" data-level="7.2.5" data-path="errores-despacho.html"><a href="errores-despacho.html#c47.-base-ad-valorem-erronea"><i class="fa fa-check"></i><b>7.2.5</b> <strong>C47. Base ‘ad valorem’ erronea</strong></a></li>
+<li class="chapter" data-level="7.2.6" data-path="errores-despacho.html"><a href="errores-despacho.html#c8.-nif-importador-nif-declarante"><i class="fa fa-check"></i><b>7.2.6</b> <strong>C8. NIF importador = NIF declarante</strong></a></li>
+<li class="chapter" data-level="7.2.7" data-path="errores-despacho.html"><a href="errores-despacho.html#c44.-partida-inexistente"><i class="fa fa-check"></i><b>7.2.7</b> <strong>- C44. Partida inexistente</strong></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="gestión-de-notificaciones.html"><a href="gestión-de-notificaciones.html"><i class="fa fa-check"></i><b>8</b> Gestión de Notificaciones</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="gestión-de-notificaciones.html"><a href="gestión-de-notificaciones.html#clasificación"><i class="fa fa-check"></i><b>8.1</b> Clasificación</a></li>
+<li class="chapter" data-level="8.2" data-path="gestión-de-notificaciones.html"><a href="gestión-de-notificaciones.html#apremios"><i class="fa fa-check"></i><b>8.2</b> Apremios</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="anexos.html"><a href="anexos.html"><i class="fa fa-check"></i><b>9</b> ANEXOS</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="anexos.html"><a href="anexos.html#solicitar-despacho-h1"><i class="fa fa-check"></i><b>9.1</b> Solicitar despacho H1</a></li>
+<li class="chapter" data-level="9.2" data-path="anexos.html"><a href="anexos.html#ciclo-de-vida-h7"><i class="fa fa-check"></i><b>9.2</b> Ciclo de vida  H7 </a></li>
+<li class="chapter" data-level="9.3" data-path="anexos.html"><a href="anexos.html#cobro-del-factaje-en-h7-ioss"><i class="fa fa-check"></i><b>9.3</b> Cobro del factaje en H7 IOSS</a></li>
+<li class="chapter" data-level="9.4" data-path="anexos.html"><a href="anexos.html#significado-mrn"><i class="fa fa-check"></i><b>9.4</b> Significado MRN</a></li>
+<li class="chapter" data-level="9.5" data-path="anexos.html"><a href="anexos.html#liquidación-paralela-en-aduana"><i class="fa fa-check"></i><b>9.5</b> Liquidación Paralela en Aduana</a></li>
+<li class="chapter" data-level="9.6" data-path="anexos.html"><a href="anexos.html#anexo-algunas-partidas"><i class="fa fa-check"></i><b>9.6</b> ANEXO: Algunas partidas</a></li>
+<li class="chapter" data-level="9.7" data-path="anexos.html"><a href="anexos.html#objetos-de-arte-iva-reducido"><i class="fa fa-check"></i><b>9.7</b> Objetos de arte, IVA reducido</a></li>
+<li class="chapter" data-level="9.8" data-path="anexos.html"><a href="anexos.html#flujo-lrd"><i class="fa fa-check"></i><b>9.8</b> Flujo LRD</a></li>
+<li class="chapter" data-level="9.9" data-path="anexos.html"><a href="anexos.html#requerimientos---listados"><i class="fa fa-check"></i><b>9.9</b> Requerimientos - Listados</a>
+<ul>
+<li class="chapter" data-level="9.9.1" data-path="anexos.html"><a href="anexos.html#duas-despachados-por-integrador"><i class="fa fa-check"></i><b>9.9.1</b> DUAs despachados por integrador</a></li>
+<li class="chapter" data-level="9.9.2" data-path="anexos.html"><a href="anexos.html#duas-despachados-por-taric"><i class="fa fa-check"></i><b>9.9.2</b> DUAs despachados por Taric</a></li>
+<li class="chapter" data-level="9.9.3" data-path="anexos.html"><a href="anexos.html#llevar-expedientes-a-despacho-solicitado-tras-responder-a-requerimientos"><i class="fa fa-check"></i><b>9.9.3</b> LLevar expedientes a Despacho Solicitado tras responder a requerimientos</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Book</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="json-despachar" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> JSON : DESPACHAR<a href="json-despachar.html#json-despachar" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><strong>**************  CERRAR EL TARIC NORMAL !!!!!!!!!!   ***************</strong></p>
+<p>Las situaciones por las que nos puede llegar un paquete a despacho por JSON son variadas:</p>
+<ul>
+<li><p>Desde circuitos cuando se ha iniciado el procedimiento de devolución a origen y David solicita la anulacion de la EXS</p>
+<ul>
+<li>Pueden tener inspecciones paraduaneras terminadas.</li>
+</ul></li>
+<li><p>Desde presupuestos, al hacer por integrador el presupuesto cuando el paquete lleva mas de 85 dias en taric (suele ocurrir en H7 que pasan a H1). <strong>ojo que estos no han pasado por paraduaneros.</strong></p></li>
+</ul>
+<p>Ruta del excel para ver la situación de los envíos presupuestados por json:</p>
+<p><strong>Y:/2022/AREA TRAMITACION ADUANERA/Tramitación JSON/2022_Tramitacion_JSON.xls</strong></p>
+<p>Ruta donde Integrador crea sus ficheros JSON</p>
+<p><strong>Y:\Ficheros\TARIC\JSON\Solicitud</strong></p>
+<p>Ruta desde donde Integrador recibe los ficheros JSON</p>
+<p><strong>Y:\Ficheros\TARIC\JSON\Respuesta</strong></p>
+<p>Ruta desde donde TARIC importa y exporta DUAS.txt (hay que tener abierto TARIC_INTEGRADOR)</p>
+<p><strong>F:\TDUA_INTEGRADOR</strong></p>
+<p><strong>AEAT</strong></p>
+<p>Comprobar que a la sumaria le queda saldo de <strong>Bultos</strong> y <strong>Kilos</strong></p>
+<div id="exportar-json-desde-integrador" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Exportar JSON desde INTEGRADOR<a href="json-despachar.html#exportar-json-desde-integrador" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Desde <strong>Utilidades - situación de paquetes</strong> comprobar que esté pagado.</p>
+<p>Para generar solicitud JSON:</p>
+<p><strong>Gestión Paq. Correos Express - Tramitaciones Aduaneras - Gestion Taric (JSON) - Solicitud</strong></p>
+<p>Crea un fichero en <strong>Y:/…/Solicitud</strong> con el nombre del nº de envío, lo renombramos como <strong>DUAS.TXT</strong> y lo movemos a <strong>F:\TDUA_INTEGRADOR</strong></p>
+</div>
+<div id="tdua_integrador-generación-de-dua-y-registro-ante-aeat" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> TDUA_INTEGRADOR: generación de DUA y registro ante AEAT<a href="json-despachar.html#tdua_integrador-generación-de-dua-y-registro-ante-aeat" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Importados DUAS.TXT desde <strong>Aplicaciones - datos - importar</strong> seleccionando la primera opción<br />
+<strong>duas | importar…</strong></p>
+<p>Buscamos desde <strong>DUAs - Búsqueda</strong>, con las opciones por defecto (Importación, EDI, No Registrado), el último campo creado será el DUA importado nuevo. </p>
+<p><strong>Le marcamos 🗹</strong></p>
+<p>Dentro de su expediente, comprobar las casillas:</p>
+<ul>
+<li><p><strong>8. (EORI)</strong></p></li>
+<li><p><strong>20. FCA3 o CIP1 (</strong>taric solo lo calcula cuando salvas el expediente y lo vuelves a abrir)</p></li>
+<li><p><strong>GARANTÍA GRN -</strong> borrar la de DATOS CONTABLES (28ES…..)  y ponemos en el campo a la derecha la garantía:</p>
+<ul>
+<li>18ESAGL2800006694</li>
+</ul></li>
+<li><p><strong>33.</strong> Poner una partida válida en taric nuevo y nuestro diccionario</p></li>
+<li><p><strong>37.2</strong> Las franquicias y los documentos tienen que ser coherentes con lo presupuestado para que no de error de liquidación diferente.</p></li>
+<li><p><strong>Doc Cargo 40.:</strong> si es un H7, hay que cambiar la X por Z y añadir la palabra DUA, el campo C40 se actualizará automaticamente.</p></li>
+<li><p><strong>Tipo de cambio</strong> tiene que actualizarse en el momento, ya que el que la AEAT comprueba es el vigente en el momento de despacho (el que viene trasladado desde integrador puede estar desfasado, volver a pasar por la divisa, o actualizar manualmente)</p></li>
+<li><p><strong>Documentos EDI</strong></p>
+<ul>
+<li><p>Comprobar que esté el <strong>1005</strong> (Autorización individual de despacho), se puede poner el numero de envio</p></li>
+<li><p>Si vemos que no tiene <strong>iva cobrado en el presupuesto</strong> en TDocs (y no son efectos personales), posiblemente se trate de un IOSS, lo comprobamos buscado el numero de envio en el excel de los IOSS. Habrá que añadir las franquicias y documentos propios de los IOSS.</p></li>
+</ul></li>
+</ul>
+<p><img src="https://lh3.googleusercontent.com/z7ioi9Z7obvBAPjN2nHjD_uWZPi1Umm3sHJ6uDHJ1y1tYiYHnF12G70DGD5J_CC5E3zMquQPRhNbs-HOTZqS6-K_I6202QfxIguXq71_zDF-a3qme5P7OIyFxxzWjpap14IXwRLrhrWzLMKlmsxR7sVfCuww6D6tkQNny3mY4WKWT-6lLljid6X6KgLZ" /></p>
+<p><strong>Documentos que deben aparecer según las SIF que haya pasado el paquete</strong></p>
+<p><strong>FARMACIA:</strong></p>
+<p><a href="https://www.desul.es/wp-content/uploads/DOIFFE-Importacion-Mayo.pdf" class="uri">https://www.desul.es/wp-content/uploads/DOIFFE-Importacion-Mayo.pdf</a></p>
+<ul>
+<li><p>Si lo que vamos a despachar es el 1 / 2 bultos que queda tras un decomiso:</p>
+<ul>
+<li>Cambiar partida a lo que quede y sin documentos adicionales</li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li><p>Si lo que vamos a despachar es el bulto tras un OK:</p>
+<ul>
+<li>1306 // numero doife // fecha doife</li>
+</ul></li>
+<li><p>Si lo que vamos a despachar lleva el documento 1403 y no ha tenido que pasar SIF</p>
+<ul>
+<li>1403 // nº envío // fecha hoy</li>
+</ul></li>
+<li><p>Cambio de partida. Farmacia dice no procede inspeccioN Quitar 1306</p>
+<ul>
+<li>ZZZZ // no procede farmacia  // fecha</li>
+</ul></li>
+<li><p>Los errores de despacho pueden surgir:</p>
+<ul>
+<li><p>Pais del DOIFE no coincide con el del DUA</p></li>
+<li><p>Bultos y Kg del DOIFE no coincide con el del DUA</p></li>
+<li><p>Falta certificado DOIFE, y por lo tanto la AEAT no lo puede coger mediante SIFAEX<br />
+<img src="https://lh5.googleusercontent.com/k161NbMTfhaxaDnrc0Ih-MwjlJB92eHKsp5dLF7QpMrOofCNU224tMSquJ34gi4eJkpXU5AHl-Cut_eBR5IsnhNBD1suZ6Jou_41LXUYex0UUf7OCp3Vyji9YYRwIlENVtA4FnYajAfq9Qj-nq6umaNGzAm70Qi8TQO3G9roD0oz9A4FxnvKeeOKVn6k" /></p></li>
+</ul></li>
+<li><p>Si está todo bien, pero aun asi no se puede despachar, usar ZZZZ con el numero de DOIFE y su fecha<br />
+<img src="https://lh3.googleusercontent.com/7L-RIa-ulzqEJ9NQGJXF1YSwW5bRSp8cVIS1KmCySNE8nV76lfYNsxV4j5QNvv4mjfdXhQl6KzEiWM3lsInWIWNbzrOJtKd4RBCG66wIJ_g591V1t2IgdkkXQmB_k7gpRjLDjbTcrTBqXcMjEsy5W63AzoFFGD5jdWl7rp-hSNA0B6st_1Cys8ofEH64" /><br />
+<img src="https://lh4.googleusercontent.com/uCCFAhj_XFycO7AZ4XWXgPX0Xcn92qRk6uAdTvRzm3tTYi7h6W-4WSheGTZjreDWcAG1qN-0oBwnpb-M94RM0eJsYictEsL41eec8HdxTv2nlGzpW8FC__KfR7lEE8CXj-NYvbSU5S_mbgr0Ae0JzbE47mHZVdduUgPdHf5ydctx1LsKZIZozi59GjLe" /></p></li>
+</ul>
+<p><strong>COM:</strong></p>
+<ul>
+<li><p>Si lo que vamos a despachar es el 1 / 2 bultos que queda tras un decomiso:</p>
+<ul>
+<li>Cambiar partida a lo que quede y sin documentos adicionales</li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li><p>Si lo que vamos a despachar es el bulto tras un OK:</p>
+<ul>
+<li>1310 // numero certificado com 01 // fecha certificado</li>
+</ul></li>
+</ul>
+<p><img src="https://lh4.googleusercontent.com/jFlxN7Mb8g1ztmODMJxp0Szp68XOGdZ5ad7D7mp8bm4YNZaGXdkd37j2hrDvJwWNUNgm6G7BX40BfMHmmjr_lDTsLyPLspRaBVl95iNrLLxmN_rICUzisLzYM5EORZxxPX1_RNmLavW4DxeDjno9fYJjb1Hd0wOMkO4eMAcCqlhVfWxRK44VwrzJn1Ba" /></p>
+<p><img src="https://lh6.googleusercontent.com/YMvsfZd_ngSGQRtHKeDKIIP7BmgDLvCeDA7Q5kBgQ01ksBv2xCtyypYabnJ4oLLOkZY4VXNDB-Ffmd-OhMupoEcc4InAivPyQ9JmQE1wDCeYsEFqesA9e3aqplk-IjPqYi_sZntgP4djWt6Oy-LP7-l0GsVf3fRLbGbyBeKhcPRcHCPME40_2CEtCHhV" /></p>
+<p><strong>SANIDAD:</strong></p>
+<p><a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2004-18771" class="uri">https://www.boe.es/buscar/doc.php?id=BOE-A-2004-18771</a></p>
+<ul>
+<li><p>Si lo que vamos a despachar es el 1 / 2 bultos que queda tras un decomiso:</p>
+<ul>
+<li>Cambiar partida a lo que quede y sin documentos adicionales</li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li>Si lo que vamos a despachar es el bulto tras un OK:</li>
+</ul>
+<p>Añadir el C657 ES1234(numero en OK) y la fecha del ok</p>
+<p><img src="https://lh5.googleusercontent.com/BPbMp5Ptsl3dbATnJ0KhrCfoQcptrMzQWYpBbo6S50ERnyDh5ggzeQ_OIQ-ijGzXyIxXPcVRhmF78IcznvdqVsoSUdp_zyYy4VocokHxTXmAfyAhepEjEx0fTLs6y96V7145xG_Iu_eNBbb_ZZ1FImOWlCCTFWAnsuRgBlIig_yoMldhZ02xlH8EyjSP" /></p>
+<p><strong>FITO:</strong></p>
+<ul>
+<li><p>Si lo que vamos a despachar es el 1 / 2 bultos que queda tras un decomiso:</p>
+<ul>
+<li>Cambiar partida a lo que quede y sin documentos adicionales</li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li>Si lo que vamos a despachar es el bulto tras un OK:<br />
+<img src="https://lh5.googleusercontent.com/R91w_frJTnWpwN6u9IYpmBiug20inYUXH_WytSBpy4d6L_1nOzbKczGTWmBGhuZDx3EsXBOvfgHyQu6bNnAEwBEODrjapANYYhBFHieU5zICQghZWg2goarl2uR794gMOELVYbpXbL3BsmqJV9OT1SEA7bHTDuW4ADpUmGO_dmWKlkTdewXrQDydRhry" /><br />
+<img src="https://lh5.googleusercontent.com/yai7wnWwsGU4A8qlhboZMg_G2TQmEE9Q0xTXPbYhnQ2TJ823COwg2QJgti_kwAJOflsYGf2a71EV2_eIjokxd0mwQQ_qdBd45MMoM7jsjwH0nLrr8Ta6OdUVSpg2013iyC_1mnQEKV62qA1lYxvenRxTcRKfGazshEaiOGlsZ-A_dieobBqlkOJ-d4WV" /><br />
+En el caso de que haya habido una inspeccion fisica, hay que tener cuidado con el C40, comprobar en conocimiento aéreo los transitos y elegir la Sumaria de Descarga con bultos.<br />
+<img src="https://lh5.googleusercontent.com/52KV1NdTAsGMYoVC2lRmVYxHkaSO0VZ99_QQUVoSrAhsQkXJaBSUtvBAUihATYVt8GK8G4kn7aqfjwTRYYRGjqX3K1Z5GsX1r0ichRAC6nD4APqxRU-qb6sEgebsXc_Kke4mwkrFR4R6BTpA6cLr0uVkyv-95gyTVwGaJAmgc5KKnmpL6dim2AWumugy" /></li>
+</ul>
+<p><strong>CITES:</strong></p>
+<ul>
+<li><p>Si lo que vamos a despachar es el 1 / 2 bultos que queda tras un decomiso:</p>
+<ul>
+<li>Cambiar partida a lo que quede y sin documentos adicionales</li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li><p>Si lo que vamos a despachar es el bulto tras un OK:</p>
+<ul>
+<li>C400 // numero certificado cites //</li>
+</ul></li>
+</ul>
+<p><strong>ARMAS:</strong></p>
+<ul>
+<li><p>Si lo que vamos a despachar es el 1 / 2 bultos que queda tras un decomiso:</p>
+<ul>
+<li>Cambiar partida a lo que quede y sin documentos adicionales</li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li><p>Si lo que vamos a despachar es el bulto tras un OK:</p>
+<ul>
+<li>Y934 // POR EMAIL // fecha hoy</li>
+</ul></li>
+</ul>
+<div id="rechazo-parcial---procedimiento-para-acomodar-sumarias" class="section level3 hasAnchor" number="5.2.1">
+<h3><span class="header-section-number">5.2.1</span> Rechazo parcial - procedimiento para acomodar sumarias<a href="json-despachar.html#rechazo-parcial---procedimiento-para-acomodar-sumarias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Tras un rechazo parcial:</p>
+<p>-H1: como ya hay una sumaria, simplemente se solicita que se desglose para que tenga 2 bultos</p>
+<p>-H7: no hay una sumaria que desglosar; dentro de conocimiento aéreo, quitando las dos primeras letras y las dos últimas se puede ver la sumaria que se usará, se tiene que solicitar un determinado número de kilos también</p>
+<p><img src="https://lh3.googleusercontent.com/MsCgv3VXjACstULz4GaSlM0gK-S3E9dBCwzwRd0y6bsB3EWOtTaJjOdRVzXmeAWEb80MqXSVjxJv9xvORDo5FugNwmGvWgDEvE_o_Rg4bBml3Kw5zu6jF85oRC4XiV6O4Dsszc7YOf3cDtXX8jGaNf_MiZ94jSTqJtVBy9-yYXNncQk29zfxbnIxhgbB" /></p>
+<p>-H7 en No Levante, para poder despachar este, usaremos la sumaria de la destrucción, se solicita un desglose para que tenga 2 bultos y el total de kilos adecuados para destruccion (1b, 1kg) y despacho (1b, total kg - 1)</p>
+<p>Los documentos relativos a las inspecciones los podemos encontrar en integrador en la pestaña 6.inspecciones… haciendo doble clic sobre el recuadro amarillo relativo a los eventos de la inspección.</p>
+<p>Salimos del expediente y usamos <strong>CTRL + U</strong> para <strong>DESPACHAR</strong> ante la AEAT y obtener un circuito.</p>
+<p>Usamos <strong>ALT + A</strong> para exportar los datos a F:/TDUA_INTEGRADOR  (DUAS.txt) y lo cortamos a la carpeta <strong>Y:/…/Respuesta</strong></p>
+</div>
+</div>
+<div id="volcar-respuesta-desde-tdua_integrador-a-integrador" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Volcar respuesta desde Tdua_integrador  a INTEGRADOR<a href="json-despachar.html#volcar-respuesta-desde-tdua_integrador-a-integrador" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Gestión Paq. Correos Express - Tramitaciones Aduaneras - Gestión Taric (JSON) - Respuesta</strong></p>
+<p>Ya deberá estar puesta la ruta a la carpeta respuesta</p>
+<p>El circuito se puede ver en la pestaña 3. </p>
+<p>Para actualizar la situación en la pestaña 1.:</p>
+<p><strong>Utilidades - Gestión de situacion - Cambio manual de situación</strong></p>
+<p>Con el número de envío y seleccionas la situación deseada</p>
+<p>** Si sale <strong>amarillo</strong> hay que poner naranja.</p>
+<ul>
+<li><p>FINALIZACIÓN TRAMITACIÓN ADUANERA (CIRCUITO VERDE)</p></li>
+<li><p>INSPECCIÓN ADUANERA ORDINARIO (CIRCUITO NARANJA)</p></li>
+<li><p>INSPECCIÓN ADUANERA ORDINARIO (CIRCUITO ROJO)</p></li>
+</ul>
+<p><img src="https://lh5.googleusercontent.com/3_ofXLQKU8MBNjUE_H2z6DgTitNm79EzCKew5RaGTlxeC2zFK4av5IswRKPA7vrUM9oAstsWLwcK6zDnV3yKldJj89WLLufo4WLGRHSvGLXEDcCjAzhG0Q98HGvgepKYZQtlDfKdTKIlgaz7jeQHnMm62lvIygO0NJe02qxdaZdeudt9L2mAGY-3eML6" /></p>
+<p>En el excel de los json, cortamos la fila que hemos despachado y la añadimos a la pestaña <strong>Ultimados.</strong></p>
+</div>
+<div id="error-al-exportar-json-desde-integrador" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Error al exportar JSON desde integrador<a href="json-despachar.html#error-al-exportar-json-desde-integrador" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>No nos permite crear el JSON desde el integrador. Suele pasar si el DUA ya ha sido despachado una vez. Integrador no reconoce si el DUA ha sido anulado.</p>
+<p>En este caso desde Taric_Integrador abriremos la búsqueda de DUAS ya registrados para encontrar uno con el mismo país de origen. Daremos a <strong>Ctrl + C</strong> para duplicar el dua (se creará como no registrado).</p>
+<p>Debemos rellenar los datos cambiando el <strong>nº de expediente</strong> (el nº de presupuesto) y el <strong>nº de registro</strong> (el número del envío).</p>
+<p>También cambiamos todos los campos: importador, exportador, cond. Entrega, <strong>importes</strong>, <strong>partida, documentos,</strong> para que coincidan MUY IMPORTANTE CAMBIAR EL DOCUMENTO DE CARGO Y SUMARIA <strong>PARA QUE COINCIDA AL DESPACHAR CON LA AEAT</strong></p>
+</div>
+<div id="error-al-importar-txt-a-integrador" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Error al importar txt a integrador<a href="json-despachar.html#error-al-importar-txt-a-integrador" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Si en la pestaña 3 de integrador al importar el json no aparece la información del despacho; posiblemente el fallo se encuentre en que al chequear la sumaria de descarga en el expediente de S4 haya algun fallo.</p>
+<p><img src="https://lh4.googleusercontent.com/NremJn-wio9GY7hlVBbRu5DQqqVqk0FsQqHilJFbBfIr6p2drMhGshuScA7FKW-kdnfk4-DHZnq2X4g_1E-KCvWKnqpayVFSvFlbIlfsGZoHqJ3lcsqwZ3_K_TSdTWdNfC_gSS9lIXHKQHsMmgGZv9eZDf62C9_NSBVkytkpZ9NKYfM51GlYFxPhQ8aF" /></p>
+<p>En la imagen, en S4 ni siquiera está puesta la sumaria. Se corrige en S4 y se vuelve a intentar</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="json-presupuestos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="atc-presupuestos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
