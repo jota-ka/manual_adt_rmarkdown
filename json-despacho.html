@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>8 Gestión de Notificaciones | Manual ADT</title>
-  <meta name="description" content="8 Gestión de Notificaciones | Manual ADT" />
+  <title>5 JSON : Despacho | Manual ADT</title>
+  <meta name="description" content="5 JSON : Despacho | Manual ADT" />
   <meta name="generator" content="bookdown 0.30 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="8 Gestión de Notificaciones | Manual ADT" />
+  <meta property="og:title" content="5 JSON : Despacho | Manual ADT" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="8 Gestión de Notificaciones | Manual ADT" />
+  <meta name="twitter:title" content="5 JSON : Despacho | Manual ADT" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="errores-de-despacho.html"/>
-<link rel="next" href="anexos.html"/>
+<link rel="prev" href="json-presupuestos.html"/>
+<link rel="next" href="atc-presupuestos.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -259,43 +259,207 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="gestión-de-notificaciones" class="section level1 hasAnchor" number="8">
-<h1><span class="header-section-number">8</span> Gestión de Notificaciones<a href="gestión-de-notificaciones.html#gestión-de-notificaciones" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="clasificación" class="section level2 hasAnchor" number="8.1">
-<h2><span class="header-section-number">8.1</span> Clasificación<a href="gestión-de-notificaciones.html#clasificación" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Para acceder a la sección de notificaciones desde la web de <a href="http://www.adpostales.com">www.adpostales.com</a> nos desplazamos a:</p>
-<p><img src="https://lh6.googleusercontent.com/7DpOHDkMmWTF5mb8O0ibtWf-Rwo9rykabdcsEmilQ-Kn8oQiyILPTdotjvM_UAsAi4uPWRZFBH416dPiY4VSOi7rMXbqGSkC610zuDuagClJBop-i0RHdE-fSG0XshB87y4fDHwI-_SwUVDdwTmqiJiWqatzS8y6dDIqV15ynC4yColIm7gNy7KkD0Gg8w" /></p>
-<p>Las notificaciones al ser cargadas se incluyen automáticamente en el buzón “DOCUMENTOS Y</p>
-<p>ESCRITOS”. Los filtros que se deben introducir son los siguientes:</p>
-<p>- Fecha: Máximo 3 meses</p>
-<p>- Tipo: “Documentos y Escritos”</p>
-<p>- Estado: “PENDIENTE”</p>
-<p>Una vez introducidos los filtros pulsar la opción “Buscar”.</p>
-<p><img src="https://lh3.googleusercontent.com/TFxXUU02Zjja48tHuSwG-P8VU0CEPnDAjg6TIESkqUEs1sQtWFdEUXUvibWdq4e7v-JIO5u4rj-4dWgh4mcb2Dbg_Z8pAR1AoWlM4ZFaAmpWMSLPP2mIQ3_tqSYk_Ztu2GmTE4nvnMyRXrOogonqumY44C7YHgwaG438Nbz4a5JJJYvVO3vhnmXYIdKNYg" /></p>
-<p>Se ordenan por “Fecha de Registro” para empezar por las más antiguas. Se van descargando el documento y enviando al buzon correspondiente. Por ejemplo, para un requerimiento:</p>
-<p><img src="https://lh5.googleusercontent.com/SBWkfXVU4znnDaq0oWBBMUfBz4qyYO7bxnA18VLHY4Qfknqne9ibtrVAusdxHXJ59Mz5jwviB6a0pewQcZ1BVCHVv8nnMhHxQ_zRc9tf4U8l2uRkDFYjUxVCrjaXGe_ZdF1CBthjlTKCbUMyggxi7S33ipPYdsTTF8UQivekX0-iqDuWfMmIUmIdunXiTw" /></p>
-<p>Este pasará al buzón “Requerimientos AEAT” en estado “PENDIENTE”</p>
+<div id="json-despacho" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> JSON : Despacho<a href="json-despacho.html#json-despacho" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><strong>**************  CERRAR EL TARIC NORMAL !!!!!!!!!!   ***************</strong></p>
+<p>Las situaciones por las que nos puede llegar un paquete a despacho por JSON son variadas:</p>
+<ul>
+<li><p>Desde circuitos cuando se ha iniciado el procedimiento de devolución a origen y David solicita la anulacion de la EXS</p>
+<ul>
+<li>Pueden tener inspecciones paraduaneras terminadas.</li>
+</ul></li>
+<li><p>Desde presupuestos, al hacer por integrador el presupuesto cuando el paquete lleva mas de 85 dias en taric (suele ocurrir en H7 que pasan a H1). <strong>ojo que estos no han pasado por paraduaneros.</strong></p></li>
+</ul>
+<p>Ruta del excel para ver la situación de los envíos presupuestados por json:</p>
+<p><strong>Y:/2022/AREA TRAMITACION ADUANERA/Tramitación JSON/2022_Tramitacion_JSON.xls</strong></p>
+<p>Ruta donde Integrador crea sus ficheros JSON</p>
+<p><strong>Y:\Ficheros\TARIC\JSON\Solicitud</strong></p>
+<p>Ruta desde donde Integrador recibe los ficheros JSON</p>
+<p><strong>Y:\Ficheros\TARIC\JSON\Respuesta</strong></p>
+<p>Ruta desde donde TARIC importa y exporta DUAS.txt (hay que tener abierto TARIC_INTEGRADOR)</p>
+<p><strong>F:\TDUA_INTEGRADOR</strong></p>
+<p><strong>AEAT</strong></p>
+<p>Comprobar que a la sumaria le queda saldo de <strong>Bultos</strong> y <strong>Kilos</strong></p>
+<div id="exportar-json-desde-integrador" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Exportar JSON desde INTEGRADOR<a href="json-despacho.html#exportar-json-desde-integrador" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Desde <strong>Utilidades - situación de paquetes</strong> comprobar que esté pagado.</p>
+<p>Para generar solicitud JSON:</p>
+<p><strong>Gestión Paq. Correos Express - Tramitaciones Aduaneras - Gestion Taric (JSON) - Solicitud</strong></p>
+<p>Crea un fichero en <strong>Y:/…/Solicitud</strong> con el nombre del nº de envío, lo renombramos como <strong>DUAS.TXT</strong> y lo movemos a <strong>F:\TDUA_INTEGRADOR</strong></p>
 </div>
-<div id="apremios" class="section level2 hasAnchor" number="8.2">
-<h2><span class="header-section-number">8.2</span> Apremios<a href="gestión-de-notificaciones.html#apremios" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Cuando no se realiza el pago de una sanción en periodo voluntario (art. 62.2 LGT) comienza el periodo ejecutivo y se notificará la providencia de apremio correspondiente.</p>
-<p>En ella aparece la carta de pago y el desglose de los distintos recargos (5% - ejecutivo, 10% - apremio reducido o 20% - apremio ordinario). </p>
-<p>Debemos realizar el pago del principal y recargo en los plazos indicados en el artículo 62.5 de la LGT para poder acogernos al recargo de apremio reducido y no incurrir en intereses de demora. Para ello:</p>
+<div id="tdua_integrador-generación-de-dua-y-registro-ante-aeat" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> TDUA_INTEGRADOR: generación de DUA y registro ante AEAT<a href="json-despacho.html#tdua_integrador-generación-de-dua-y-registro-ante-aeat" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Importados DUAS.TXT desde <strong>Aplicaciones - datos - importar</strong> seleccionando la primera opción<br />
+<strong>duas | importar…</strong></p>
+<p>Buscamos desde <strong>DUAs - Búsqueda</strong>, con las opciones por defecto (Importación, EDI, No Registrado), el último campo creado será el DUA importado nuevo. </p>
+<p><strong>Le marcamos 🗹</strong></p>
+<p>Dentro de su expediente, comprobar las casillas:</p>
 <ul>
-<li><p>En la sección de Gestión de Notificaciones de la web de adtpostales realizamos una búsqueda del dia de hoy, estado “PENDIENTE” en el buzón:</p></li>
-<li><p>Traspondremos los datos necesarios desde la carta de pago (Modelo 002) de cada providencia al excel de control:<br />
-PEGAR AQUI RUTA DEL EXCEL DE CONTROL<br />
-Esto permitirá realizar la nota interna que se enviará a tesorería para realizar el pago.</p>
+<li><p><strong>8. (EORI)</strong></p></li>
+<li><p><strong>20. FCA3 o CIP1 (</strong>taric solo lo calcula cuando salvas el expediente y lo vuelves a abrir)</p></li>
+<li><p><strong>GARANTÍA GRN -</strong> borrar la de DATOS CONTABLES (28ES…..)  y ponemos en el campo a la derecha la garantía:</p>
 <ul>
-<li>La referencia en rojo permite buscar el número de envío y MRN en el propio excel (Ctrl + B, seleccionando Libro en vez de Hoja) o en el excel de control de inicio de expedientes sancionadores: </li>
+<li>18ESAGL2800006694</li>
+</ul></li>
+<li><p><strong>33.</strong> Poner una partida válida en taric nuevo y nuestro diccionario</p></li>
+<li><p><strong>37.2</strong> Las franquicias y los documentos tienen que ser coherentes con lo presupuestado para que no de error de liquidación diferente.</p></li>
+<li><p><strong>Doc Cargo 40.:</strong> si es un H7, hay que cambiar la X por Z y añadir la palabra DUA, el campo C40 se actualizará automaticamente.</p></li>
+<li><p><strong>Tipo de cambio</strong> tiene que actualizarse en el momento, ya que el que la AEAT comprueba es el vigente en el momento de despacho (el que viene trasladado desde integrador puede estar desfasado, volver a pasar por la divisa, o actualizar manualmente)</p></li>
+<li><p><strong>Documentos EDI</strong></p>
+<ul>
+<li><p>Comprobar que esté el <strong>1005</strong> (Autorización individual de despacho), se puede poner el numero de envio</p></li>
+<li><p>Si vemos que no tiene <strong>iva cobrado en el presupuesto</strong> en TDocs (y no son efectos personales), posiblemente se trate de un IOSS, lo comprobamos buscado el numero de envio en el excel de los IOSS. Habrá que añadir las franquicias y documentos propios de los IOSS.</p></li>
 </ul></li>
 </ul>
-<p><img src="https://lh5.googleusercontent.com/5TJ5vvAde78PYRNXK8yI3oRhEfGT7PKbYnrXNYwmZYVAxkEoPsZ6iT_y7-c01tsR61Ty_lw3BWf3iWaaIZCuSnITD2e4lNKAJOlsPbOgMHhtJlzoajsoWaQEIQ_jhLfvMGgwXLRRKiQT6qQKmRGqWnBu-WoVl9r1D-CgcRRMLtbkcPG18lXr1VqY2njncg" /></p>
+<p><img src="https://lh3.googleusercontent.com/z7ioi9Z7obvBAPjN2nHjD_uWZPi1Umm3sHJ6uDHJ1y1tYiYHnF12G70DGD5J_CC5E3zMquQPRhNbs-HOTZqS6-K_I6202QfxIguXq71_zDF-a3qme5P7OIyFxxzWjpap14IXwRLrhrWzLMKlmsxR7sVfCuww6D6tkQNny3mY4WKWT-6lLljid6X6KgLZ" /></p>
+<p><strong>Documentos que deben aparecer según las SIF que haya pasado el paquete</strong></p>
+<p><strong>FARMACIA:</strong></p>
+<p><a href="https://www.desul.es/wp-content/uploads/DOIFFE-Importacion-Mayo.pdf" class="uri">https://www.desul.es/wp-content/uploads/DOIFFE-Importacion-Mayo.pdf</a></p>
 <ul>
-<li><p>Extraemos las dos páginas que conforman la carta de pago (5 y 7) de cada notificacion y las guardaremos en la ruta:<br />
-PEGAR AQUI RUTA , con nombre la clave de liquidación.</p></li>
-<li><p>Subiremos a TDocs la notificación asignándole el numero de envio correspondiente desde la web de adtpostales.</p></li>
+<li><p>Si lo que vamos a despachar es el 1 / 2 bultos que queda tras un decomiso:</p>
+<ul>
+<li>Cambiar partida a lo que quede y sin documentos adicionales</li>
+</ul></li>
 </ul>
+<!-- -->
+<ul>
+<li><p>Si lo que vamos a despachar es el bulto tras un OK:</p>
+<ul>
+<li>1306 // numero doife // fecha doife</li>
+</ul></li>
+<li><p>Si lo que vamos a despachar lleva el documento 1403 y no ha tenido que pasar SIF</p>
+<ul>
+<li>1403 // nº envío // fecha hoy</li>
+</ul></li>
+<li><p>Cambio de partida. Farmacia dice no procede inspeccioN Quitar 1306</p>
+<ul>
+<li>ZZZZ // no procede farmacia  // fecha</li>
+</ul></li>
+<li><p>Los errores de despacho pueden surgir:</p>
+<ul>
+<li><p>Pais del DOIFE no coincide con el del DUA</p></li>
+<li><p>Bultos y Kg del DOIFE no coincide con el del DUA</p></li>
+<li><p>Falta certificado DOIFE, y por lo tanto la AEAT no lo puede coger mediante SIFAEX<br />
+<img src="https://lh5.googleusercontent.com/k161NbMTfhaxaDnrc0Ih-MwjlJB92eHKsp5dLF7QpMrOofCNU224tMSquJ34gi4eJkpXU5AHl-Cut_eBR5IsnhNBD1suZ6Jou_41LXUYex0UUf7OCp3Vyji9YYRwIlENVtA4FnYajAfq9Qj-nq6umaNGzAm70Qi8TQO3G9roD0oz9A4FxnvKeeOKVn6k" /></p></li>
+</ul></li>
+<li><p>Si está todo bien, pero aun asi no se puede despachar, usar ZZZZ con el numero de DOIFE y su fecha<br />
+<img src="https://lh3.googleusercontent.com/7L-RIa-ulzqEJ9NQGJXF1YSwW5bRSp8cVIS1KmCySNE8nV76lfYNsxV4j5QNvv4mjfdXhQl6KzEiWM3lsInWIWNbzrOJtKd4RBCG66wIJ_g591V1t2IgdkkXQmB_k7gpRjLDjbTcrTBqXcMjEsy5W63AzoFFGD5jdWl7rp-hSNA0B6st_1Cys8ofEH64" /><br />
+<img src="https://lh4.googleusercontent.com/uCCFAhj_XFycO7AZ4XWXgPX0Xcn92qRk6uAdTvRzm3tTYi7h6W-4WSheGTZjreDWcAG1qN-0oBwnpb-M94RM0eJsYictEsL41eec8HdxTv2nlGzpW8FC__KfR7lEE8CXj-NYvbSU5S_mbgr0Ae0JzbE47mHZVdduUgPdHf5ydctx1LsKZIZozi59GjLe" /></p></li>
+</ul>
+<p><strong>COM:</strong></p>
+<ul>
+<li><p>Si lo que vamos a despachar es el 1 / 2 bultos que queda tras un decomiso:</p>
+<ul>
+<li>Cambiar partida a lo que quede y sin documentos adicionales</li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li><p>Si lo que vamos a despachar es el bulto tras un OK:</p>
+<ul>
+<li>1310 // numero certificado com 01 // fecha certificado</li>
+</ul></li>
+</ul>
+<p><img src="https://lh4.googleusercontent.com/jFlxN7Mb8g1ztmODMJxp0Szp68XOGdZ5ad7D7mp8bm4YNZaGXdkd37j2hrDvJwWNUNgm6G7BX40BfMHmmjr_lDTsLyPLspRaBVl95iNrLLxmN_rICUzisLzYM5EORZxxPX1_RNmLavW4DxeDjno9fYJjb1Hd0wOMkO4eMAcCqlhVfWxRK44VwrzJn1Ba" /></p>
+<p><img src="https://lh6.googleusercontent.com/YMvsfZd_ngSGQRtHKeDKIIP7BmgDLvCeDA7Q5kBgQ01ksBv2xCtyypYabnJ4oLLOkZY4VXNDB-Ffmd-OhMupoEcc4InAivPyQ9JmQE1wDCeYsEFqesA9e3aqplk-IjPqYi_sZntgP4djWt6Oy-LP7-l0GsVf3fRLbGbyBeKhcPRcHCPME40_2CEtCHhV" /></p>
+<p><strong>SANIDAD:</strong></p>
+<p><a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2004-18771" class="uri">https://www.boe.es/buscar/doc.php?id=BOE-A-2004-18771</a></p>
+<ul>
+<li><p>Si lo que vamos a despachar es el 1 / 2 bultos que queda tras un decomiso:</p>
+<ul>
+<li>Cambiar partida a lo que quede y sin documentos adicionales</li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li>Si lo que vamos a despachar es el bulto tras un OK:</li>
+</ul>
+<p>Añadir el C657 ES1234(numero en OK) y la fecha del ok</p>
+<p><img src="https://lh5.googleusercontent.com/BPbMp5Ptsl3dbATnJ0KhrCfoQcptrMzQWYpBbo6S50ERnyDh5ggzeQ_OIQ-ijGzXyIxXPcVRhmF78IcznvdqVsoSUdp_zyYy4VocokHxTXmAfyAhepEjEx0fTLs6y96V7145xG_Iu_eNBbb_ZZ1FImOWlCCTFWAnsuRgBlIig_yoMldhZ02xlH8EyjSP" /></p>
+<p><strong>FITO:</strong></p>
+<ul>
+<li><p>Si lo que vamos a despachar es el 1 / 2 bultos que queda tras un decomiso:</p>
+<ul>
+<li>Cambiar partida a lo que quede y sin documentos adicionales</li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li>Si lo que vamos a despachar es el bulto tras un OK:<br />
+<img src="https://lh5.googleusercontent.com/R91w_frJTnWpwN6u9IYpmBiug20inYUXH_WytSBpy4d6L_1nOzbKczGTWmBGhuZDx3EsXBOvfgHyQu6bNnAEwBEODrjapANYYhBFHieU5zICQghZWg2goarl2uR794gMOELVYbpXbL3BsmqJV9OT1SEA7bHTDuW4ADpUmGO_dmWKlkTdewXrQDydRhry" /><br />
+<img src="https://lh5.googleusercontent.com/yai7wnWwsGU4A8qlhboZMg_G2TQmEE9Q0xTXPbYhnQ2TJ823COwg2QJgti_kwAJOflsYGf2a71EV2_eIjokxd0mwQQ_qdBd45MMoM7jsjwH0nLrr8Ta6OdUVSpg2013iyC_1mnQEKV62qA1lYxvenRxTcRKfGazshEaiOGlsZ-A_dieobBqlkOJ-d4WV" /><br />
+En el caso de que haya habido una inspeccion fisica, hay que tener cuidado con el C40, comprobar en conocimiento aéreo los transitos y elegir la Sumaria de Descarga con bultos.<br />
+<img src="https://lh5.googleusercontent.com/52KV1NdTAsGMYoVC2lRmVYxHkaSO0VZ99_QQUVoSrAhsQkXJaBSUtvBAUihATYVt8GK8G4kn7aqfjwTRYYRGjqX3K1Z5GsX1r0ichRAC6nD4APqxRU-qb6sEgebsXc_Kke4mwkrFR4R6BTpA6cLr0uVkyv-95gyTVwGaJAmgc5KKnmpL6dim2AWumugy" /></li>
+</ul>
+<p><strong>CITES:</strong></p>
+<ul>
+<li><p>Si lo que vamos a despachar es el 1 / 2 bultos que queda tras un decomiso:</p>
+<ul>
+<li>Cambiar partida a lo que quede y sin documentos adicionales</li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li><p>Si lo que vamos a despachar es el bulto tras un OK:</p>
+<ul>
+<li>C400 // numero certificado cites //</li>
+</ul></li>
+</ul>
+<p><strong>ARMAS:</strong></p>
+<ul>
+<li><p>Si lo que vamos a despachar es el 1 / 2 bultos que queda tras un decomiso:</p>
+<ul>
+<li>Cambiar partida a lo que quede y sin documentos adicionales</li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li><p>Si lo que vamos a despachar es el bulto tras un OK:</p>
+<ul>
+<li>Y934 // POR EMAIL // fecha hoy</li>
+</ul></li>
+</ul>
+<div id="rechazo-parcial---procedimiento-para-acomodar-sumarias" class="section level3 hasAnchor" number="5.2.1">
+<h3><span class="header-section-number">5.2.1</span> Rechazo parcial - procedimiento para acomodar sumarias<a href="json-despacho.html#rechazo-parcial---procedimiento-para-acomodar-sumarias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Tras un rechazo parcial:</p>
+<p>-H1: como ya hay una sumaria, simplemente se solicita que se desglose para que tenga 2 bultos</p>
+<p>-H7: no hay una sumaria que desglosar; dentro de conocimiento aéreo, quitando las dos primeras letras y las dos últimas se puede ver la sumaria que se usará, se tiene que solicitar un determinado número de kilos también</p>
+<p><img src="https://lh3.googleusercontent.com/MsCgv3VXjACstULz4GaSlM0gK-S3E9dBCwzwRd0y6bsB3EWOtTaJjOdRVzXmeAWEb80MqXSVjxJv9xvORDo5FugNwmGvWgDEvE_o_Rg4bBml3Kw5zu6jF85oRC4XiV6O4Dsszc7YOf3cDtXX8jGaNf_MiZ94jSTqJtVBy9-yYXNncQk29zfxbnIxhgbB" /></p>
+<p>-H7 en No Levante, para poder despachar este, usaremos la sumaria de la destrucción, se solicita un desglose para que tenga 2 bultos y el total de kilos adecuados para destruccion (1b, 1kg) y despacho (1b, total kg - 1)</p>
+<p>Los documentos relativos a las inspecciones los podemos encontrar en integrador en la pestaña 6.inspecciones… haciendo doble clic sobre el recuadro amarillo relativo a los eventos de la inspección.</p>
+<p>Salimos del expediente y usamos <strong>CTRL + U</strong> para <strong>DESPACHAR</strong> ante la AEAT y obtener un circuito.</p>
+<p>Usamos <strong>ALT + A</strong> para exportar los datos a F:/TDUA_INTEGRADOR  (DUAS.txt) y lo cortamos a la carpeta <strong>Y:/…/Respuesta</strong></p>
+</div>
+</div>
+<div id="volcar-respuesta-desde-tdua_integrador-a-integrador" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Volcar respuesta desde Tdua_integrador  a INTEGRADOR<a href="json-despacho.html#volcar-respuesta-desde-tdua_integrador-a-integrador" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Gestión Paq. Correos Express - Tramitaciones Aduaneras - Gestión Taric (JSON) - Respuesta</strong></p>
+<p>Ya deberá estar puesta la ruta a la carpeta respuesta</p>
+<p>El circuito se puede ver en la pestaña 3. </p>
+<p>Para actualizar la situación en la pestaña 1.:</p>
+<p><strong>Utilidades - Gestión de situacion - Cambio manual de situación</strong></p>
+<p>Con el número de envío y seleccionas la situación deseada</p>
+<p>** Si sale <strong>amarillo</strong> hay que poner naranja.</p>
+<ul>
+<li><p>FINALIZACIÓN TRAMITACIÓN ADUANERA (CIRCUITO VERDE)</p></li>
+<li><p>INSPECCIÓN ADUANERA ORDINARIO (CIRCUITO NARANJA)</p></li>
+<li><p>INSPECCIÓN ADUANERA ORDINARIO (CIRCUITO ROJO)</p></li>
+</ul>
+<p><img src="https://lh5.googleusercontent.com/3_ofXLQKU8MBNjUE_H2z6DgTitNm79EzCKew5RaGTlxeC2zFK4av5IswRKPA7vrUM9oAstsWLwcK6zDnV3yKldJj89WLLufo4WLGRHSvGLXEDcCjAzhG0Q98HGvgepKYZQtlDfKdTKIlgaz7jeQHnMm62lvIygO0NJe02qxdaZdeudt9L2mAGY-3eML6" /></p>
+<p>En el excel de los json, cortamos la fila que hemos despachado y la añadimos a la pestaña <strong>Ultimados.</strong></p>
+</div>
+<div id="error-al-exportar-json-desde-integrador" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Error al exportar JSON desde integrador<a href="json-despacho.html#error-al-exportar-json-desde-integrador" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>No nos permite crear el JSON desde el integrador. Suele pasar si el DUA ya ha sido despachado una vez. Integrador no reconoce si el DUA ha sido anulado.</p>
+<p>En este caso desde Taric_Integrador abriremos la búsqueda de DUAS ya registrados para encontrar uno con el mismo país de origen. Daremos a <strong>Ctrl + C</strong> para duplicar el dua (se creará como no registrado).</p>
+<p>Debemos rellenar los datos cambiando el <strong>nº de expediente</strong> (el nº de presupuesto) y el <strong>nº de registro</strong> (el número del envío).</p>
+<p>También cambiamos todos los campos: importador, exportador, cond. Entrega, <strong>importes</strong>, <strong>partida, documentos,</strong> para que coincidan MUY IMPORTANTE CAMBIAR EL DOCUMENTO DE CARGO Y SUMARIA <strong>PARA QUE COINCIDA AL DESPACHAR CON LA AEAT</strong></p>
+</div>
+<div id="error-al-importar-txt-a-integrador" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Error al importar txt a integrador<a href="json-despacho.html#error-al-importar-txt-a-integrador" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Si en la pestaña 3 de integrador al importar el json no aparece la información del despacho; posiblemente el fallo se encuentre en que al chequear la sumaria de descarga en el expediente de S4 haya algun fallo.</p>
+<p><img src="https://lh4.googleusercontent.com/NremJn-wio9GY7hlVBbRu5DQqqVqk0FsQqHilJFbBfIr6p2drMhGshuScA7FKW-kdnfk4-DHZnq2X4g_1E-KCvWKnqpayVFSvFlbIlfsGZoHqJ3lcsqwZ3_K_TSdTWdNfC_gSS9lIXHKQHsMmgGZv9eZDf62C9_NSBVkytkpZ9NKYfM51GlYFxPhQ8aF" /></p>
+<p>En la imagen, en S4 ni siquiera está puesta la sumaria. Se corrige en S4 y se vuelve a intentar</p>
 </div>
 </div>
             </section>
@@ -303,8 +467,8 @@ PEGAR AQUI RUTA , con nombre la clave de liquidación.</p></li>
           </div>
         </div>
       </div>
-<a href="errores-de-despacho.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="anexos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="json-presupuestos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="atc-presupuestos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
